@@ -11,6 +11,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 16px;
+	  background-color: pink;
     }
     input:focus {
       outline: none;
@@ -26,12 +27,14 @@
 <body>
   <h1>Input Validation</h1>
   <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" /><br />
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" /><br />
-    <label for="mobile">Mobile:</label>
-    <input type="text" id="mobile" placeholder="Enter your mobile number" /><br />
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" placeholder="Enter your name" required /><br />
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" placeholder="Enter your email" required /><br />
+    <label for="mobile">Mobile:</label><br />
+    <input type="text" id="mobile" placeholder="Enter your mobile number" required /><br />
+	<br />
+	<button class="valid">Submit</button>
   </form>
   <script src="script.js"></script>
 </body>
